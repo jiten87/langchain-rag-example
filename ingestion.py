@@ -7,7 +7,7 @@ from langchain_chroma import Chroma
 
 # Constants
 persist_directory = 'db'
-file_path = "vectorDBDoc.txt"
+file_path = "vectordbdoc.txt"
 
 def ingest_data():
     """
