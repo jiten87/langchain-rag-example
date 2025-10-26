@@ -18,6 +18,7 @@ def retrieve_data(query):
     # create lmm from mistral modal
     llm = ChatOllama(model= "mistral")
 
+    # run the query over the llm to see the diffrence.
     chain = PromptTemplate.from_template(query) | llm
     result = chain.invoke(input={})
     print(result.content)
